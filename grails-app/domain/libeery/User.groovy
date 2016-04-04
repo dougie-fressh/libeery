@@ -11,12 +11,18 @@ class User implements Serializable {
 
 	transient springSecurityService
 
+	static hasMany = [userBeers: Beer]
+
+	//default user params
 	String username
 	String password
 	boolean enabled = true
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+
+	//added params
+	List userBeers
 
 	User(String username, String password) {
 		this()

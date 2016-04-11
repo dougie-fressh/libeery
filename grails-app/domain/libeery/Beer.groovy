@@ -5,19 +5,19 @@ class Beer {
     static constraints = {
         name blank:false
         style blank:false
-        abv min:0
-        ibu min:0
+        //abv min:0.0
+        //ibu min:0.0
         description blank:false
-        rating min:0, max:10
+        //rating min:0.0, max:10.0
 
     }
 
     String name
     String style
-    long abv
-    long ibu
+    float abv
+    float ibu
     String description
-    long rating
+    float rating
     Brewery brewery
 
 }

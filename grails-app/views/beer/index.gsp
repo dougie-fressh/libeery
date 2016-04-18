@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="col-md-6">
-                <img src="${createLinkTo(dir: 'images', file: 'fakelogo.png')}"class="img-rounded"/>
+                <img src="${createLinkTo(dir: 'images', file: 'beer_logo.png')}"class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
                 Sign in
@@ -40,15 +40,15 @@
             <div class="col-md-6">
                 <h1>Industry Updates</h1><br>
                 <h3>Headline</h3><br>
-                <div class="col-md-3"><img src="${createLinkTo(dir: 'images', file: '100x100.png')}"class="img-rounded"/></div><div class="col-md-7">Some sample text about the industry. Some more sample text. keep writing about the industry, just keep writing, i don't have anything here yet, blah blah blah, blah blah blah blah blah, some other bullshit<br><br><br></div><br>
+                <div class="col-md-3"><img src="${createLinkTo(dir: 'images', file: 'beer_day_logo.png')}"class="img-rounded"/></div><div class="col-md-7"> National Beer Day is April 7th! Use this as an excuse to get out and fully experience what breweries have to offer! Look out for exclusive flavors and brands to try this holiday.<br><br><br></div><br>
                 <h3>Headline</h3><br>
-                <div class="col-md-7">Some sample text about the industry. Some more sample text. keep writing about the industry, just keep writing, i don't have anything here yet, blah blah blah, blah blah blah blah blah, some other bullshit</div><div class="col-md-3"><img src="${createLinkTo(dir: 'images', file: '100x100.png')}"class="img-rounded"/></div>
+                <div class="col-md-7"> Anheuser--Busch announced it is to acquire Devils Backbone Brewery to add to 'The High End'. This is Busch's division that house more selective and craft breweries.</div><div class="col-md-3"><img src="${createLinkTo(dir: 'images', file: 'devils_logo.png')}"class="img-rounded"/></div>
             </div>
             <div class="col-sm-4">
                 <h1>Trending</h1><br>
-                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: '50x50.png')}"class="img-rounded"/></div><div class="col-sm-7">examplejaklrajsd; fljadk;lsfjakldsjfklajklejsfklajslf kjdsk;lfa;djsfklajsfklaewofidjsflkajds; lfjiofajewifojadsklfj aeipowjfaklsjdf;l<br><br><br></div>
-                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: '50x50.png')}"class="img-rounded"/></div><div class="col-sm-7">adslfkja dkls;fjaklsfjaeiojsdfklas jdfpdsjioaewjakldsjflewaj ioajsfldkjafj aewio<br><br><br></div>
-                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: '50x50.png')}"class="img-rounded"/></div><div class="col-sm-7">jadklsfj aweiojadklsjfk ;lasd jfoaeiwjkladsjfkl; asdjfio aewjfakd;lsfjojuei owfjasklfjaow<br><br><br></div>
+                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: 'oberon_logo.png')}"class="img-rounded"/></div><div class="col-sm-7"> Bells Oberon; Checkout this popular wheat ale just in time for summer! Mixing spicy hops with mildly fruity aromas, it's a for sure favorite<br><br><br></div>
+                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: 'goose_island_logo.png')}"class="img-rounded"/></div><div class="col-sm-7"> Goose Island IPA; If you like hops, Goose Island is sure to satisfy. This IPA comes with a bold hop bitterness that lasts to the last drop.<br><br><br></div>
+                <div class="col-sm-3"><img src="${createLinkTo(dir: 'images', file: 'stillwater_logo.png')}"class="img-rounded"/></div><div class="col-sm-7"> Stillwater Artisanal Cellar Door; A wheat ale that gives a new twist with sage as an ingredient to bring all flavors together for a full cleansing beer.<br><br><br></div>
             </div>
         </div>
     </div>

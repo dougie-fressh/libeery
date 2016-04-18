@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="col-md-6">
-                <img src="${createLinkTo(dir: 'images', file: 'fakelogo.png')}"class="img-rounded"/>
+                <img src="${createLinkTo(dir: 'images', file: 'beer_logo.png')}"class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
                 Sign in
@@ -40,11 +40,11 @@
             <button class="btn btn-default" value="Add" name="Add">Add</button>  <button class="btn btn-default" value="Edit" name="Edit">Edit</button>
         </div>
         <div class="col-md-3">
-            <img src="${createLinkTo(dir: 'images', file: '100x100.png')}"class="img-rounded"/>
+            <img src="${createLinkTo(dir: 'images', file: 'heineken_beer.png')}"class="img-rounded"/>
         </div>
         <div class="col-md-4">
-            <h3>Beer 1</h3><br>
-            <h1>Brewery</h1><br>
+            <h3>Heineken</h3><br>
+            <h1>Heineken International</h1><br>
             <span class="star-rating">
                 <input type="radio" name="rating" value="1"><i></i>
                 <input type="radio" name="rating" value="2"><i></i>
@@ -54,8 +54,8 @@
             </span>
         </div>
         <div class="col-md-4">
-            ABV: 6.5%<br>
-            IBU: 30.4
+            ABV: 5.4%<br>
+            IBU: 18.5
         </div>
 </body>
 </html>

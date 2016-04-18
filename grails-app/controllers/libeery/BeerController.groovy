@@ -11,8 +11,11 @@ class BeerController {
         //this is where the beer list is
     }
 
-    def questionaire() {
+    def questionnaire() {
         //this is where the questions are
+    }
+
+    def myprofile() {
     }
 
     def generateBeerList() {

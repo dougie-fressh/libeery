@@ -12,6 +12,6 @@
 </head>
 
 <body>
-this page is where the user answers questions to generate the 'beers you may like' list
+this page is where the user answers questions to generate the 'my libeery' list
 </body>
 </html>

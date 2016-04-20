@@ -13,5 +13,12 @@
 
 <body>
 this page is where the user answers questions to generate the 'beers you may like' list
+
+<g:form action="generateBeerList">
+    <label>Get a beer list:</label>
+    <br />
+    <g:submitButton name="Generate!"/>
+</g:form>
+
 </body>
 </html>

@@ -2,6 +2,8 @@ package libeery
 
 class BeerController {
 
+    def beerFinderService
+
     def index() {
         //landing page after login
         //hard coded random beer info
@@ -19,12 +21,9 @@ class BeerController {
     }
 
     def generateBeerList() {
-        //builds query to be sent to api
-
-        //def clientId =
-        //def clientSecret =
-
-        //'https://api.untappd.com/v4/method_name?client_id=' + 'clientId' + '&client_secret=' + clientSecret
+        String beerJson = beerFinderService.getBeerJson()
+        println(beerJson)
+        [beerJson: beerJson]
     }
 
 

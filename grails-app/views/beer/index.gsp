@@ -25,13 +25,14 @@
                     <li><g:link action="index">Home</g:link></li>
                     <li><g:link action="myLibeery">My Libeery</g:link></li>
                     <li><g:link action="questionnaire">Questionnaire</g:link></li>
+                    <li><g:link action="brewery">Brewery</g:link></li>
                     <li><g:link action="myprofile">My Profile</g:link></li>
                 </ul>
             </div>
         </div>
     </div>
     <hr>
-    <div class="page-header" align="center"><h1>Libeery<br><small>Building your library of beer.</small></h1></div>
+    <div class="page-header" align="center"><h1>Profile<br><small>Change your profile settings</small></h1></div>
 </head>
 
 <body>

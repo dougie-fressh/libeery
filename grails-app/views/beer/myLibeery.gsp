@@ -26,6 +26,7 @@
                     <li><g:link action="index">Home</g:link></li>
                     <li><g:link action="myLibeery">My Libeery</g:link></li>
                     <li><g:link action="questionnaire">Questionnaire</g:link></li>
+                    <li><g:link action="brewery">Brewery</g:link></li>
                     <li><g:link action="myprofile">My Profile</g:link></li>
                 </ul>
             </div>
@@ -56,6 +57,7 @@
         <div class="col-md-4">
             ABV: 5.4%<br>
             IBU: 18.5
+        </div>
         </div>
 </body>
 </html>

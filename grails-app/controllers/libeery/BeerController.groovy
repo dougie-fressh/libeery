@@ -26,5 +26,7 @@ class BeerController {
         [beerJson: beerJson]
     }
 
+    def brewery() {
 
+    }
 }

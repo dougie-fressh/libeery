@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="col-md-6">
-                <img src="${createLinkTo(dir: 'images', file: 'fakelogo.png')}"class="img-rounded"/>
+                <img src="${createLinkTo(dir: 'images', file: 'beer_logo.png')}"class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
                 Sign in
@@ -25,6 +25,7 @@
                     <li><g:link action="index">Home</g:link></li>
                     <li><g:link action="myLibeery">My Libeery</g:link></li>
                     <li><g:link action="questionnaire">Questionnaire</g:link></li>
+                    <li><g:link action="brewery">Brewery</g:link></li>
                     <li><g:link action="myprofile">My Profile</g:link></li>
                 </ul>
             </div>

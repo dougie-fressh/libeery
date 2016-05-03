@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="col-md-6">
-                <img src="${createLinkTo(dir: 'images', file: 'fakelogo.png')}"class="img-rounded"/>
+                <img src="${createLinkTo(dir: 'images', file: 'fa1kelogo.png')}"class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
                 <sec:ifNotLoggedIn>
@@ -31,6 +31,7 @@
                     <li><g:link action="index">Home</g:link></li>
                     <li><g:link action="myLibeery">My Libeery</g:link></li>
                     <li><g:link action="questionnaire">Questionnaire</g:link></li>
+                    <li><g:link action="brewery">Brewery</g:link></li>
                     <li><g:link action="myprofile">My Profile</g:link></li>
                 </ul>
             </div>
@@ -50,7 +51,7 @@
             </div>
             <div class="col-md-6">
                 <h1>Discover Your Beer</h1><br>
-                Who are you?
+                Find the beer in you?
             </div>
         </div>
     </div>
@@ -61,10 +62,10 @@
                     <h5><label class="control-label col-md-8" for="field1">You wake up with a pounding hangover. You stumble into your kitchen and the first thing you do is pour yourself a glass of water. You follow it up with:</label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field1">
-                            <option value="lager, bitter">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option value="MALT and FRUIT">Orange Juice</option>
+                            <option value="ROAST">Milk</option>
+                            <option value="ROAST">Coffee3</option>
+                            <option value="CRISP">Tea</option>
                         </select><br>
                     </div>
                 </div>
@@ -72,10 +73,10 @@
                     <h5><label class="control-label col-md-8" for="field2">You’re at a party, and some drunk guy is trying to start something with your friend. You get in between the two of them and:</label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option value="MALT">Start swinging</option>
+                            <option value="TART">Talk quickly and de-escalate the situation</option>
+                            <option value="SMOKE">Talk loud and intimidating; get the other guy to back down</option>
+                            <option value="HOP">Say nothing and stare dead-eyed into the guy’s soul</option>
                         </select><br>
                     </div>
                 </div>
@@ -84,10 +85,10 @@
                     </label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field3">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option value="HOP">Leap off of the couch and drag your friend to a bar, where you meet people and get rather inebriated.</option>
+                            <option value="SMOKE">Call a few of your mutual friends, go to a restaurant, and have a nice intimate conversation over drinks.</option>
+                            <option value="CRISP">Open that bottle of wine you’ve been saving, share it with your friend, and have a deep talk about the meaning of life.</option>
+                            <option value="MALT">Open that bottle of wine you’ve been saving, kick your friend out, and have a quiet evening doing (insert hobby) by yourself.</option>
                         </select><br>
                     </div>
                 </div>
@@ -95,10 +96,10 @@
                     <h5><label class="control-label col-md-8" for="field4">It’s 8:00 on the weekend. You’re sitting on the couch with a (platonic) friend, and you have no plans. You:</label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field4">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option value="HOP and SMOKE">1</option>
+                            <option value="CRISP and MALT">2</option>
+                            <option value="TART and FRUIT">3</option>
+                            <option value="CRISP">4</option>
                         </select><br>
                     </div>
                 </div>
@@ -106,10 +107,10 @@
                     <h5><label class="control-label col-md-8" for="field5">Some Text</label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field5">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option value="SMOKE and TART">Gather firewood, chop it up</option>
+                            <option value="ROAST">Set up the tent</option>
+                            <option value="FRUIT">Seek out those wildberries you heard grow in the area</option>
+                            <option value="HOP">Play guitar and rock out</option>
                         </select><br>
                     </div>
                 </div>

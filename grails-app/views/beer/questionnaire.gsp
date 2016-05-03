@@ -100,12 +100,14 @@
                             <option value="ROAST">Set up the tent</option>
                             <option value="FRUIT">Seek out those wildberries you heard grow in the area</option>
                             <option value="HOP">Play guitar and rock out</option>
-                        </select><br>1
+                        </select><br>
                     </div>
                 </div>
+                </form>
             </div>
         <br><br>
     </div>
+
     <g:submitButton name="Generate!"/>
 </g:form>
 </body>

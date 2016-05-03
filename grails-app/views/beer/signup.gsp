@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="col-md-6">
-                <img src="${createLinkTo(dir: 'images', file: 'beer_logo.png')}" class="img-rounded"/>
+                <img src="${createLinkTo(dir: 'images', file: 'Libeery_Logo_v2.png')}" class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
                 <sec:ifNotLoggedIn>

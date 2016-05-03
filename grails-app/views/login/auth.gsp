@@ -115,6 +115,9 @@
 		</form>
 	</div>
 </div>
+<div align="center">
+	<g:link controller="beer" action="signup">Sign Up</g:link>
+</div>
 <script>
 (function() {
 	document.forms['loginForm'].elements['${usernameParameter ?: 'username'}'].focus();

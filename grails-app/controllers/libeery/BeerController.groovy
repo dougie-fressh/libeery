@@ -1,5 +1,8 @@
 package libeery
 
+import grails.plugin.springsecurity.SpringSecurityUtils
+import grails.plugin.springsecurity.annotation.Secured
+
 class BeerController {
 
     def beerFinderService
@@ -28,5 +31,20 @@ class BeerController {
 
     def brewery() {
 
+    }
+
+    def signup() {
+
+    }
+
+    def register() {
+        def userRole = new Role('ROLE_USER').save()
+        def user = new User(params.username, params.password).save()
+        UserRole.create user, userRole
+        redirect(action:"auth", controller:"login")
+    }
+
+    def logout() {
+        redirect uri: SpringSecurityUtils.securityConfig.logout.filterProcessesUrl
     }
 }

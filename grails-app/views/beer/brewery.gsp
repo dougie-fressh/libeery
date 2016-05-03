@@ -18,7 +18,13 @@
                 <img src="${createLinkTo(dir: 'images', file: 'beer_logo.png')}" class="img-rounded"/>
             </div>
             <div class="col-md-4" align="right">
-                Sign in
+                <sec:ifNotLoggedIn>
+                    <g:link action="auth" controller="login">Login</g:link>
+                </sec:ifNotLoggedIn>
+                <sec:ifLoggedIn>
+                    <g:link action="logout">Logout</g:link>
+                </sec:ifLoggedIn>
+
             </div>
             <div class="col-lg-10" align="right">
                 <ul class="list-inline">

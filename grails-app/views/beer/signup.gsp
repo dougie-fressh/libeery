@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-4" align="right">
                 <sec:ifNotLoggedIn>
-                    <g:link action="auth" controller="login">Login</g:link>
+                    <g:link controller="beer" action="signup">Sign Up</g:link> / <g:link action="auth" controller="login">Login</g:link>
                 </sec:ifNotLoggedIn>
                 <sec:ifLoggedIn>
                     <g:link action="logout">Logout</g:link>

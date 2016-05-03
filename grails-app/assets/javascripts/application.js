@@ -8,6 +8,7 @@
 //= require jquery-2.1.3.js
 //= require bootstrap.min.js
 //= require npm.js
+//= require brewery.js
 //= require_tree .
 //= require_self
 

@@ -63,8 +63,8 @@
                     <div class="col-md-3">
                         <select class="form-control" id="field1">
                             <option value="MALT and FRUIT">Orange Juice</option>
-                            <option value="ROAST">Milk</option>
-                            <option value="ROAST">Coffee3</option>
+                            <option value="ROAST SOFT">Milk</option>
+                            <option value="ROAST DARK">Coffee3</option>
                             <option value="CRISP">Tea</option>
                         </select><br>
                     </div>
@@ -85,39 +85,28 @@
                     </label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field3">
-                            <option value="HOP">Leap off of the couch and drag your friend to a bar, where you meet people and get rather inebriated.</option>
-                            <option value="SMOKE">Call a few of your mutual friends, go to a restaurant, and have a nice intimate conversation over drinks.</option>
-                            <option value="CRISP">Open that bottle of wine you’ve been saving, share it with your friend, and have a deep talk about the meaning of life.</option>
-                            <option value="MALT">Open that bottle of wine you’ve been saving, kick your friend out, and have a quiet evening doing (insert hobby) by yourself.</option>
+                            <option value="HOP and SMOKE">Leap off of the couch and drag your friend to a bar, where you meet people and get rather inebriated.</option>
+                            <option value="CRISP and MALT">Call a few of your mutual friends, go to a restaurant, and have a nice intimate conversation over drinks.</option>
+                            <option value="TART and FRUIT">Open that bottle of wine you’ve been saving, share it with your friend, and have a deep talk about the meaning of life.</option>
+                            <option value="CRISP">Open that bottle of wine you’ve been saving, kick your friend out, and have a quiet evening doing (insert hobby) by yourself.</option>
                         </select><br>
                     </div>
                 </div>
                 <div class="form-group">
-                    <h5><label class="control-label col-md-8" for="field4">It’s 8:00 on the weekend. You’re sitting on the couch with a (platonic) friend, and you have no plans. You:</label></h5>
+                    <h5><label class="control-label col-md-8" for="field4">You're setting up your site for a weekend camping trip. People are unloading their packs, and you volunteer to:</label></h5>
                     <div class="col-md-3">
                         <select class="form-control" id="field4">
-                            <option value="HOP and SMOKE">1</option>
-                            <option value="CRISP and MALT">2</option>
-                            <option value="TART and FRUIT">3</option>
-                            <option value="CRISP">4</option>
-                        </select><br>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <h5><label class="control-label col-md-8" for="field5">Some Text</label></h5>
-                    <div class="col-md-3">
-                        <select class="form-control" id="field5">
                             <option value="SMOKE and TART">Gather firewood, chop it up</option>
                             <option value="ROAST">Set up the tent</option>
                             <option value="FRUIT">Seek out those wildberries you heard grow in the area</option>
                             <option value="HOP">Play guitar and rock out</option>
-                        </select><br>
+                        </select><br>1
                     </div>
                 </div>
-                <br><br>
-        </div>
+            </div>
+        <br><br>
     </div>
     <g:submitButton name="Generate!"/>
 </g:form>
 </body>
-</html> 
+</html>

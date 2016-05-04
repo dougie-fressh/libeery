@@ -13,12 +13,22 @@
     <meta name="layout" content="main">
 </head>
 <body>
+<div id="header">
+    <h1>Personalized Results:</h1>
+</div>
 <g:form action="addUserBeers" id="addUserBeers" class="form-horizontal" role="form">
     <g:each var="beer" in="${beerList}">
         <div>
-            <span>${beer.name} - ${beer.description}
-                <g:checkBox name="${beer.name}"/>
-            </span>
+            <p><b><span><g:checkBox name="${beer.name}"/></span> ${beer.name}</b></p>
+            <g:if test= "${beer.description}">
+                <p>${beer.description}</p>
+            </g:if>
+            <g:else>
+                <p> No description available.</p>
+            </g:else>
+            <br/>
+
+
         </div>
     </g:each>
     <g:submitButton name="Add to Libeery"/>

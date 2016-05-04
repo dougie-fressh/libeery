@@ -11,7 +11,32 @@
         <g:layoutHead/>
     </head>
     <body>
-        <div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-md-6">
+                    <img src="${createLinkTo(dir: 'images', file: 'Libeery_Logo_v2.bmp')}" class="img-rounded" height="200"/>
+                </div>
+                <div class="col-md-4" align="right">
+                    <sec:ifNotLoggedIn>
+                        <g:link controller="beer" action="signup">Sign Up</g:link> / <g:link action="auth" controller="login">Login</g:link>
+                    </sec:ifNotLoggedIn>
+                    <sec:ifLoggedIn>
+                        <g:link controller="beer" action="logout">Logout</g:link>
+                    </sec:ifLoggedIn>
+
+                </div>
+                <div class="col-lg-10" align="right">
+                    <ul class="list-inline">
+                        <li><g:link controller="beer" action="index">Home</g:link></li>
+                        <li><g:link controller="beer" action="myLibeery">My Libeery</g:link></li>
+                        <li><g:link controller="beer" action="questionnaire">Questionnaire</g:link></li>
+                        <li><g:link controller="beer" action="brewery">Brewery</g:link></li>
+                        <li><g:link controller="beer" action="myprofile">My Profile</g:link></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
         <g:layoutBody/>
         <div class="footer" role="contentinfo"></div>
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

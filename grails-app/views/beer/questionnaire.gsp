@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="page-header" align="center"><h1>Questionnaire<br><small>Not Knowing What to Drink Ends Now</small></h1></div>
-    <g:form action="generateBeerList" id="generateBeerList" class="form-horizontal" role="form">
+    <g:form action="generateBeerList" name="generateBeerList" class="form-horizontal" role="form">
         <label>Get a beer list:</label>
         <div class="container">
             <div class="row-fluid">
@@ -29,53 +29,39 @@
         </div>
         <div class="container">
             <div class="col-sm-6">
-                <form id="profileform" class="form-horizontal" role="form">
                     <div class="form-group">
                         <h5><label class="control-label col-md-8" for="field1">You wake up with a pounding hangover. You stumble into your kitchen and the first thing you do is pour yourself a glass of water. You follow it up with:</label></h5>
                         <div class="col-md-3">
-                            <select class="form-control" id="field1">
-                                <option value="MALT and FRUIT">Orange Juice</option>
-                                <option value="ROAST SOFT">Milk</option>
-                                <option value="ROAST DARK">Coffee3</option>
-                                <option value="CRISP">Tea</option>
-                            </select><br>
+                            <g:select class="form-control" name="field1" from="${qMap1}"
+                                      optionKey="key" optionValue="value">
+                            </g:select><br>
                         </div>
                     </div>
                     <div class="form-group">
                         <h5><label class="control-label col-md-8" for="field2">You’re at a party, and some drunk guy is trying to start something with your friend. You get in between the two of them and:</label></h5>
                         <div class="col-md-3">
-                            <select class="form-control" id="field2">
-                                <option value="MALT">Start swinging</option>
-                                <option value="TART">Talk quickly and de-escalate the situation</option>
-                                <option value="SMOKE">Talk loud and intimidating; get the other guy to back down</option>
-                                <option value="HOP">Say nothing and stare dead-eyed into the guy’s soul</option>
-                            </select><br>
+                            <g:select class="form-control" name="field2" from="${qMap2}"
+                                      optionKey="key" optionValue="value">
+                            </g:select><br>
                         </div>
                     </div>
                     <div class="form-group">
                         <h5><label class="control-label col-md-8" for="field3">It’s 8:00 on the weekend. You’re sitting on the couch with a (platonic) friend, and you have no plans. You:
                         </label></h5>
                         <div class="col-md-3">
-                            <select class="form-control" id="field3">
-                                <option value="HOP and SMOKE">Leap off of the couch and drag your friend to a bar, where you meet people and get rather inebriated.</option>
-                                <option value="CRISP and MALT">Call a few of your mutual friends, go to a restaurant, and have a nice intimate conversation over drinks.</option>
-                                <option value="TART and FRUIT">Open that bottle of wine you’ve been saving, share it with your friend, and have a deep talk about the meaning of life.</option>
-                                <option value="CRISP">Open that bottle of wine you’ve been saving, kick your friend out, and have a quiet evening doing (insert hobby) by yourself.</option>
-                            </select><br>
+                            <g:select class="form-control" name="field3" from="${qMap3}"
+                                      optionKey="key" optionValue="value">
+                            </g:select><br>
                         </div>
                     </div>
                     <div class="form-group">
                         <h5><label class="control-label col-md-8" for="field4">You're setting up your site for a weekend camping trip. People are unloading their packs, and you volunteer to:</label></h5>
                         <div class="col-md-3">
-                            <select class="form-control" id="field4">
-                                <option value="SMOKE and TART">Gather firewood, chop it up</option>
-                                <option value="ROAST">Set up the tent</option>
-                                <option value="FRUIT">Seek out those wildberries you heard grow in the area</option>
-                                <option value="HOP">Play guitar and rock out</option>
-                            </select><br>
+                            <g:select class="form-control" name="field4" from="${qMap4}"
+                                      optionKey="key" optionValue="value">
+                            </g:select><br>
                         </div>
                     </div>
-                    </form>
                 </div>
             <br><br>
         </div>

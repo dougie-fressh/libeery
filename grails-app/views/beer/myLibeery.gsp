@@ -38,5 +38,14 @@
             IBU: 18.5
         </div>
         </div>
+        <div>
+            <label>List of all current beers:</label>
+            <table border="1px">
+                <g:each var="beer" in="${allBeers}">
+                    <tr>
+                        <td>${beer.name}</td>
+                    </tr>
+                </g:each>
+        </div>
 </body>
 </html>

@@ -1,32 +1,74 @@
 package libeery
 
-//@Grab('org.codehaus.groovy.modules.http-builder:http-builder:0.7')
-//@Grab('oauth.signpost:signpost-core:1.2.1.2')
-//@Grab('oauth.signpost:signpost-commonshttp4:1.2.1.2')
-
 import grails.transaction.Transactional
-import groovyx.net.http.HTTPBuilder
+import groovyx.net.http.RESTClient
 import static groovyx.net.http.ContentType.*
-import grails.converters.JSON
 
 @Transactional
 class BeerFinderService {
 
     //should these be static?
-    private static final String clientId = 'F0C1E241EC5F6F600D8E3981176E236E44872C61'
-    private static final String clientSecret = '1BC8580055ECD222D3BB2BE3996D98DD9B4209F4'
+    private static final String untappdClientId = 'F0C1E241EC5F6F600D8E3981176E236E44872C61'
+    private static final String untappdClientSecret = '1BC8580055ECD222D3BB2BE3996D98DD9B4209F4'
 
-    //def untappd = new RESTClient( 'https://api.untappd.com/v4/')
-    def untappd = new HTTPBuilder('https://api.untappd.com/v4/')
-    def breweryDB = new HTTPBuilder('http://api.brewerydb.com')
+    private static final String breweryDBKey = '158d75729502d2655bdd9ca515f35e70'
 
-    def getBeerJson(String searchQuery) {
+    private static final String stylePath = ''
+
+    //def untappd = new HTTPBuilder('https://api.untappd.com/v4/')
+    def breweryDB = new RESTClient('http://api.brewerydb.com/')
+
+
+    def getAllStyles() {
         try {
             def resp = breweryDB.get(path: '/v2/menu/styles',
-                                    query:[key: '158d75729502d2655bdd9ca515f35e70',
+                                    query:[key: breweryDBKey,
                                            format: 'json'])
-            println(resp)
-            return beerJson
+
+            assert resp.status == 200
+            assert resp.contentType == JSON.toString()
+            assert ( resp.data instanceof Map )
+            assert resp.data.status.size() > 0
+
+            return resp
+
+        } catch (e) {
+            println(e)
+        }
+    }
+
+    def Beer getBeerByStyleId(String styleId) {
+        Beer retBeer = new Beer()
+        try {
+            def resp = breweryDB.get(path: '/v2/beers',
+                                    query:[key: breweryDBKey,
+                                    styleId: styleId,
+                                    order:'random',
+                                    randomCount:'1',
+                                    format: 'json'])
+
+            assert resp.status == 200
+            assert resp.contentType == JSON.toString()
+            assert ( resp.data instanceof Map )
+            assert resp.data.status.size() > 0
+
+            def beerMap = resp.data
+
+            beerMap.data.each {
+                retBeer.name = it.name
+                retBeer.style = it.style.category.name
+
+                if (it.abv) {
+                    retBeer.abv = Float.parseFloat(it.abv)
+                } else {
+                    retBeer.abv = 0.0
+                }
+
+                retBeer.description = it.description
+
+            }
+
+            return retBeer
 
         } catch (e) {
             println(e)

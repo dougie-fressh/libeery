@@ -48,6 +48,9 @@ class BeerController {
     }
 
     def myprofile() {
+        if (params.name == 'gender') {
+            [gender: params.name]
+        }
     }
 
     def generateBeerList() {

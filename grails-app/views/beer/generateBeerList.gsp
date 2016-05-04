@@ -27,8 +27,6 @@
                 <p> No description available.</p>
             </g:else>
             <br/>
-
-
         </div>
     </g:each>
     <g:submitButton name="Add to Libeery"/>

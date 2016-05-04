@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-6">
                 <h1>Name</h1><br>
-                Some personal information the person can fill out here
+                <textarea form="profileform"> Describe yourself</textarea><br><br><br>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
             <div class="form-group">
                 <h3><label class="control-label col-md-4" for="field1">Gender</label></h3>
                 <div class="col-md-5">
-                    <select class="form-control" id="field1">
+                    <select class="form-control" id="field1" name="gender">
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
@@ -41,7 +41,7 @@
             <div class="form-group">
                 <h3><label class="control-label col-md-4" for="field2">Age</label></h3>
                 <div class="col-md-5">
-                    <select class="form-control" id="field2">
+                    <select class="form-control" id="field2" name="age">
                         <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
                         <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
                         <option>31</option><option>32</option><option>33</option><option>34</option><option>35</option>
@@ -64,7 +64,7 @@
             <div class="form-group">
                 <h3><label class="control-label col-md-4" for="field3">Experience</label></h3>
                 <div class="col-md-5">
-                    <select class="form-control" id="field3">
+                    <select class="form-control" id="field3" name="experience">
                         <option>Newbie</option>
                         <option>Novice</option>
                         <option>Intermediate</option>
@@ -76,7 +76,7 @@
             <div class="form-group">
                 <h3><label class="control-label col-md-4" for="field4">Home Town</label></h3>
                 <div class="col-md-5">
-                    <input id="field4"type="text"><br>
+                    <input id="field4"type="text" name="homeTown"><br>
                 </div>
             </div>
 

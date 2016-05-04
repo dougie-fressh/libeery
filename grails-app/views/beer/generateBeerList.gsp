@@ -15,7 +15,6 @@
 <body>
 <g:form action="addUserBeers" id="addUserBeers" class="form-horizontal" role="form">
     <g:each var="beer" in="${beerList}">
-        <g:hidden name="${beer.name}_beerId" value="${beer.id}"></g:hidden>
         <div>
             <span>${beer.name} - ${beer.description}
                 <g:checkBox name="${beer.name}"/>

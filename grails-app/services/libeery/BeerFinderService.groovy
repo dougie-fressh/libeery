@@ -8,12 +8,10 @@ import static groovyx.net.http.ContentType.*
 class BeerFinderService {
 
     //should these be static?
-    private static final String untappdClientId = 'F0C1E241EC5F6F600D8E3981176E236E44872C61'
-    private static final String untappdClientSecret = '1BC8580055ECD222D3BB2BE3996D98DD9B4209F4'
+    //private static final String untappdClientId = 'F0C1E241EC5F6F600D8E3981176E236E44872C61'
+    //private static final String untappdClientSecret = '1BC8580055ECD222D3BB2BE3996D98DD9B4209F4'
 
     private static final String breweryDBKey = '158d75729502d2655bdd9ca515f35e70'
-
-    private static final String stylePath = ''
 
     //def untappd = new HTTPBuilder('https://api.untappd.com/v4/')
     def breweryDB = new RESTClient('http://api.brewerydb.com/')

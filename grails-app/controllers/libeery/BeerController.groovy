@@ -14,13 +14,15 @@ class BeerController {
 
     def myLibeery() {
         def user = springSecurityService.currentUser
-        def beerList = user.getUserBeers()
-        //def beerList = Beer.findAll()
+        //def beerList = user.getUserBeers()
+        def beerList = Beer.findAll()
         beerList.sort{it.name}
         [allBeers: beerList]
     }
 
     def questionnaire() {
+
+        //questions and associated styles courtesy of Nicky-O
         def qMap1 = ['MALT and FRUIT': 'Orange Juice',
                     'SOFT':'Milk',
                     'DARK':'Coffee',
@@ -45,7 +47,7 @@ class BeerController {
         [qMap1:qMap1, qMap2:qMap2, qMap3:qMap3, qMap4:qMap4]
     }
 
-    def myProfile() {
+    def myprofile() {
     }
 
     def generateBeerList() {
@@ -70,39 +72,39 @@ class BeerController {
         params.each{
             if (it.toString().contains('CRISP')){
                 masterList += crispList
-                println('added crisp')
+                //println('added crisp')
             }
             if (it.toString().contains('HOP')){
                 masterList += hopList
-                println('added hop')
+                //println('added hop')
             }
             if (it.toString().contains('MALT')){
                 masterList += maltList
-                println('added malt')
+                //println('added malt')
             }
             if (it.toString().contains('SOFT')){
                 masterList += roastListSoft
-                println('added soft roast')
+                //println('added soft roast')
             }
             if (it.toString().contains('DARK')){
                 masterList += roastListDark
-                println('added dark roast')
+                //println('added dark roast')
             }
             if (it.toString().contains('ROAST')){
                 masterList += roastListDark + roastListSoft
-                println('added both roasts')
+                //println('added both roasts')
             }
             if (it.toString().contains('SMOKE')){
                 masterList += smokeList
-                println('added smoke')
+                //println('added smoke')
             }
             if (it.toString().contains('FRUIT')){
                 masterList += fruitList
-                println('added fruit')
+                //println('added fruit')
             }
             if (it.toString().contains('TART')){
                 masterList += tartList
-                println('added tart')
+                //println('added tart')
             }
         }
 
